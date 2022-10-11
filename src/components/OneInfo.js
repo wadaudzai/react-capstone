@@ -1,9 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class OneInfo extends Component {
-  render() {
-    return (
-      <div>OneInfo</div>
-    );
-  }
-}
+const OneInfo = () => (
+  <div>OneInfo</div>
+);
+export default OneInfo;

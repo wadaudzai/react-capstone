@@ -1,7 +1,10 @@
-import { configureStore } from "@reduxjs/toolkit";
+import { configureStore } from '@reduxjs/toolkit';
+import coinReducer from './coinReducer';
 
 const store = configureStore({
-    reducer: combineReducers
-})
+  reducer: {
+    coins: coinReducer,
+  },
+});
 
 export default store;

@@ -7,7 +7,6 @@ import { fetchCoins } from '../redux/coinReducer';
 
 const Coins = () => {
   const coins = useSelector((state) => state.coins);
-  console.log(coins);
   const dispatch = useDispatch();
   const [search, setSearch] = useState('');
   const filteredCryptos = coins.filter((coin) => coin.name.toLowerCase().includes(search.toLowerCase()) || coin.symbol.toLowerCase().includes(search.toLowerCase()));
@@ -15,18 +14,21 @@ const Coins = () => {
     dispatch(fetchCoins());
   }, []);
   return (
-    <div>
-      <h1 className="title">Coins</h1>
-      <input type="text" placeholder="Search a cryptocurrency" onChange={(e) => setSearch(e.target.value)} className="form" />
-      {
-        filteredCryptos.map((coin) => (
-          <OneCoin
-            key={coins.id}
-            coins={coin}
-            search={search}
-          />
-        ))
-      }
+    <div className="app-holder">
+      <div className="form-holder">
+        <input type="text" placeholder="Search a cryptocurrency" onChange={(e) => setSearch(e.target.value)} className="form" />
+      </div>
+      <div className="main-holder">
+        {
+          filteredCryptos.map((coin) => (
+            <OneCoin
+              key={coins.data}
+              coins={coin}
+              search={search}
+            />
+          ))
+        }
+      </div>
     </div>
   );
 };

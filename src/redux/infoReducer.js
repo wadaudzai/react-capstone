@@ -4,7 +4,6 @@ export const fetchCoinsInfo = createAsyncThunk(
   'react-capstone/fetchCoinsInfo', async (id) => {
     const response = await fetch(`https://api.coincap.io/v2/assets/${id}`);
     const data = await response.json();
-    console.log(data);
     return data.data;
   },
 );

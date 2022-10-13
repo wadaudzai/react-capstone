@@ -6,13 +6,11 @@ import { fetchCoinsInfo } from '../redux/infoReducer';
 
 const CoinsInfo = () => {
   const coinsInfo = useSelector((state) => state.coinsInfo);
-  console.log(coinsInfo);
-  console.log(typeof (coinsInfo));
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchCoinsInfo());
   }, []);
-  console.log(coinsInfo);
+
   return (
     <div>
       <OneInfo Info={coinsInfo} />

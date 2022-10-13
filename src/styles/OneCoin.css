@@ -1,0 +1,24 @@
+.image-holder {
+  width: 100%;
+  text-align: center;
+}
+
+.image {
+  width: 100px;
+}
+
+.card-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+
+.card-holder:hover {
+  background-color: aqua;
+}
+
+.card-holder:active {
+  background-color: brown;
+}
+

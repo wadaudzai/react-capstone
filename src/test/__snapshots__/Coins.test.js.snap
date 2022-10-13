@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Coin 1`] = `
+<div
+  className="app-holder"
+>
+  <div
+    className="form-holder"
+  >
+    <input
+      className="form"
+      onChange={[Function]}
+      placeholder="Search a cryptocurrency"
+      type="text"
+    />
+  </div>
+  <div
+    className="main-holder"
+  />
+</div>
+`;

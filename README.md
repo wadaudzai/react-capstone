@@ -9,6 +9,8 @@
 - React, Redux
 - Webpack, Babel, React Testing Library
 
+## Live Demo
+https://sage-sprite-c442d7.netlify.app
 
 ## Getting Started
 

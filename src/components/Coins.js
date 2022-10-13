@@ -1,4 +1,5 @@
 /* eslint-disable max-len */
+/* eslint-disable react-hooks/exhaustive-deps */
 import { React, useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import OneCoin from './OneCoin';

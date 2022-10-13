@@ -28,6 +28,10 @@ You just need a good computer and a code editor.
 - Twitter: [@wadaudzai](https://twitter.com/wadaudzai)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/wadaudzai)
 
+## Acknowledgements
+
+I would like to express my deepest appreciation to Nelson Sakwa for creating the original design by which this project was inspired. Thank you !
+
 
 ## 🤝 Contributing
 

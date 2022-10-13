@@ -2,8 +2,8 @@ import React from 'react';
 import { Route, Routes } from 'react-router';
 import { BrowserRouter } from 'react-router-dom';
 import Coins from './components/Coins';
-import CoinsInfo from './components/CoinsInfo';
 import Navbar from './components/Navbar';
+import CoinsInfo from './components/CoinsInfo';
 
 const App = () => (
   <BrowserRouter>

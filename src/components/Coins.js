@@ -14,7 +14,14 @@ const Coins = () => {
   return (
     <div>
       <h1 className="title">Coins</h1>
-      <OneCoin coins={coins} />
+      {
+        coins.map((coin) => (
+          <OneCoin
+            key={coins.id}
+            coins={coin}
+          />
+        ))
+      }
     </div>
   );
 };

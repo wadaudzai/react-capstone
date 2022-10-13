@@ -1,44 +1,47 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { NavLink } from 'react-router-dom';
+import { fetchCoinsInfo } from '../redux/infoReducer';
 
 const OneCoin = (props) => {
   const { coins } = props;
-  const {
-    id, name, rank, symbol,
-  } = coins;
   console.log(coins);
+  const dispatch = useDispatch();
+
+  const handleClick = () => {
+    dispatch(fetchCoinsInfo(coins.id), []);
+  };
   return (
-    <li className="listItem">
-      <div className="homeItem" id={id}>
-        <div className="rank-and-arrow">
-          <p className="rank">
-            RANK #
-            {rank}
-          </p>
-          <p>{coins.name}</p>
-        </div>
-        <div className="home-item-info">
-          <div className="homeItemImage" />
-          <h3 className="name">
-            {name}
-            <br />
-            <p className="symbol">
-              {`(${symbol})`}
-            </p>
-          </h3>
-        </div>
+    <NavLink to="/CoinsInfo" onClick={handleClick}>
+      <div>
+        <p>
+          This is them:
+          {coins.id}
+        </p>
+        <p>
+          This is the:
+          {coins.name}
+        </p>
+        <p>
+          This is the
+          {coins.rank}
+        </p>
+        <p>
+          This is the
+          {coins.symbol}
+        </p>
       </div>
-    </li>
+    </NavLink>
   );
 };
 
 OneCoin.propTypes = {
-  coins: PropTypes.shape({
-    id: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    symbol: PropTypes.string.isRequired,
-    rank: PropTypes.string.isRequired,
-  }),
+  coins: PropTypes.instanceOf(Object),
+  name: PropTypes.string.isRequired,
+  symbol: PropTypes.string.isRequired,
+  rank: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
 };
 
 export default OneCoin;

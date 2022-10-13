@@ -12,6 +12,10 @@
 ## Live Demo
 https://sage-sprite-c442d7.netlify.app
 
+## Video for the project 
+This video includes a description of the project and a demo of the project features.
+https://www.loom.com/share/bf246427ec944c3ca3bd23b1f364e740
+
 ## Getting Started
 
 To start with this project. You have to run npm install. When you want to build the project run npm build and to start the project and run it on a browser run npm start. 

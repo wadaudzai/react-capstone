@@ -1,14 +1,20 @@
-import React, { Component } from 'react';
+import { React, useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import OneInfo from './OneInfo';
 import '../styles/CoinsInfo.css';
+import { fetchCoinsInfo } from '../redux/infoReducer';
 
-export default class CoinsInfo extends Component {
-  render() {
-    return (
-      <div>
-        <h2 className="title-info">CoinsInfo</h2>
-        <OneInfo />
-      </div>
-    );
-  }
-}
+const CoinsInfo = () => {
+  const coinsInfo = useSelector((state) => state.coinsInfo);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchCoinsInfo());
+  }, []);
+
+  return (
+    <div>
+      <OneInfo Info={coinsInfo} />
+    </div>
+  );
+};
+export default CoinsInfo;

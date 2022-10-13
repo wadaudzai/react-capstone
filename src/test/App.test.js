@@ -4,12 +4,12 @@ import App from '../App';
 import store from '../redux/configureStore';
 
 it('Test App', () => {
-    const tree = renderer
-      .create(
-        <Provider store={store}>
-          <App />
-        </Provider>,
-      )
-      .toJSON();
-    expect(tree).toMatchSnapshot();
-  });
+  const tree = renderer
+    .create(
+      <Provider store={store}>
+        <App />
+      </Provider>,
+    )
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});

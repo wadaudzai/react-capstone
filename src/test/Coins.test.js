@@ -4,12 +4,12 @@ import Coins from '../components/Coins';
 import store from '../redux/configureStore';
 
 it('Test Coin', () => {
-    const tree = renderer
-      .create(
-        <Provider store={store}>
-          <Coins />
-        </Provider>,
-      )
-      .toJSON();
-    expect(tree).toMatchSnapshot();
-  });
+  const tree = renderer
+    .create(
+      <Provider store={store}>
+        <Coins />
+      </Provider>,
+    )
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});

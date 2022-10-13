@@ -1,4 +1,4 @@
-# SpaceX
+# Crypto App
 
 > This project was built to display a website about cryptocurrencies. In this website you can view 100 cyptos their name,rank and price on the home page the homepage can be filtered and you can search for your desired crypto among them. You can click on one of the cryptos and it will lead you to the details page of the crypto there you can see more information regarding the crypto that you have selected. All these datas are fetched from the API and are shown on the screen here.
 
@@ -31,7 +31,7 @@ You just need a good computer and a code editor.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/wadaudzai/math-magicians/issues).
+Feel free to check the [issues page](https://github.com/wadaudzai/react-capstone/issues).
 
 ## Show your support
 

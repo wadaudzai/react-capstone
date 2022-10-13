@@ -10,7 +10,7 @@ const OneInfo = (props) => {
   } = Info;
 
   return (
-    <div>
+    <div className="coin-info-super">
       <div className="coin-title">
         <h2>
           {name}
@@ -19,8 +19,8 @@ const OneInfo = (props) => {
           )
         </h2>
       </div>
-      <div>
-        <h3>Coin Prices</h3>
+      <div className="prices-holder">
+        <h3 className="price-text">Coin Prices</h3>
 
         <div className="price">
           <h3>Market Price:</h3>
@@ -28,22 +28,22 @@ const OneInfo = (props) => {
         </div>
 
         <div className="price">
-          <h3>Market Price:</h3>
+          <h3>Supply:</h3>
           <p>{supply}</p>
         </div>
 
         <div className="price">
-          <h3>Market Price:</h3>
+          <h3>Market Cap:</h3>
           <p>{marketCapUsd}</p>
         </div>
 
         <div className="price">
-          <h3>Market Price:</h3>
+          <h3>Volume 24HRS:</h3>
           <p>{volumeUsd24Hr}</p>
         </div>
 
         <div className="price">
-          <h3>Market Price:</h3>
+          <h3>Wrap 24HRS:</h3>
           <p>{vwap24Hr}</p>
         </div>
       </div>

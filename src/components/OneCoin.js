@@ -19,7 +19,7 @@ const OneCoin = (props) => {
         <img src={image} alt="walid" className="image" />
       </div>
       <div>
-        <p>
+        <p className="data">
           {coins.name}
           (
           {coins.symbol}

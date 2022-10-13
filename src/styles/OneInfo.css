@@ -12,9 +12,20 @@
 
 .price {
     align-items: center;
-    background-color: rgba(19,7,180,.878);
+    background-color: #be3ec3;
     display: flex;
     justify-content: space-between;
     padding: 0 10px;
     color: #fff;
+}
+
+.prices-holder {
+  background-color: rgba(19,7,180,.878);
+  color: #fff;
+}
+
+.price-text {
+  margin: 0;
+  font-size: 3vh;
+  padding: 5px 0;
 }

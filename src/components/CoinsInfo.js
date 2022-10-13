@@ -15,7 +15,6 @@ const CoinsInfo = () => {
   console.log(coinsInfo);
   return (
     <div>
-      <h3>walid</h3>
       <OneInfo Info={coinsInfo} />
     </div>
   );

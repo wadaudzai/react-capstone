@@ -10,7 +10,6 @@ const OneInfo = (props) => {
 
   return (
     <div>
-      <p>walid</p>
       <p>
         This is then:
         {name}

@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test CoinsInfo 1`] = `
+<div>
+  <div
+    className="coin-info-super"
+  >
+    <div
+      className="coin-title"
+    >
+      <h2>
+        (
+        )
+      </h2>
+    </div>
+    <div
+      className="prices-holder"
+    >
+      <h3
+        className="price-text"
+      >
+        Coin Prices
+      </h3>
+      <div
+        className="price"
+      >
+        <h3>
+          Market Price:
+        </h3>
+        <p />
+      </div>
+      <div
+        className="price"
+      >
+        <h3>
+          Supply:
+        </h3>
+        <p />
+      </div>
+      <div
+        className="price"
+      >
+        <h3>
+          Market Cap:
+        </h3>
+        <p />
+      </div>
+      <div
+        className="price"
+      >
+        <h3>
+          Volume 24HRS:
+        </h3>
+        <p />
+      </div>
+      <div
+        className="price"
+      >
+        <h3>
+          Wrap 24HRS:
+        </h3>
+        <p />
+      </div>
+    </div>
+  </div>
+</div>
+`;
